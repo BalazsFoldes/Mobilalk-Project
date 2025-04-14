@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/registerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#2E7D32"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/fullnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fullname"
+        android:inputType="textPersonName"
+        android:backgroundTint="#2E7D32"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin"
+        android:layout_below="@id/registerTitle"/>
+
+    <EditText
+        android:id="@+id/userEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#2E7D32"
+        android:layout_below="@id/fullnameEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:backgroundTint="#2E7D32"
+        android:layout_below="@id/userEmailEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <EditText
+        android:id="@+id/passwordVerificationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passwordagain"
+        android:inputType="textPassword"
+        android:backgroundTint="#2E7D32"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phoneNumber"
+        android:inputType="phone"
+        android:backgroundTint="#2E7D32"
+        android:layout_below="@id/passwordVerificationEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <Spinner
+        android:id="@+id/phoneSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:inputType="textPostalAddress|textMultiLine"
+        android:maxLines="3"
+        android:backgroundTint="#2E7D32"
+        android:layout_below="@id/phoneSpinner"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin" />
+
+    <RadioGroup
+        android:id="@+id/accountTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/addressEditText"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin">
+
+        <RadioButton
+            android:id="@+id/buyerRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/buyer"
+            android:textColor="#2E7D32" />
+
+        <RadioButton
+            android:id="@+id/sellerRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seller"
+            android:textColor="#2E7D32"
+            android:layout_marginStart="32dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/accountTypeGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/defaultMargin"
+        android:layout_marginLeft="@dimen/defaultMargin"
+        android:layout_marginRight="@dimen/defaultMargin">
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:onClick="register"
+            android:backgroundTint="#2E7D32"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:onClick="cancel"
+            android:layout_marginStart="24dp"
+            android:backgroundTint="#D1E7D1"
+            android:textColor="#2E7D32" />
+    </LinearLayout>
+
+</RelativeLayout>

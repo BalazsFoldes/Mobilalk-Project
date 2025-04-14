@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "15136027321",
+    "project_id": "medshop-2108f",
+    "storage_bucket": "medshop-2108f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15136027321:android:ff76389cc43b2679c12168",
+        "android_client_info": {
+          "package_name": "com.example.betaprojekt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15136027321-5mpr2p206n3peamn03nuhqcecjbj3p64.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.betaprojekt",
+            "certificate_hash": "f41b08959066ec41082a2f3df7fc00302551bae6"
+          }
+        },
+        {
+          "client_id": "15136027321-adbfqhkd98ql3vbianaofrukm5gd29dc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRuiLxQl6XUlOzij2maTEFlpI0mABq8ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15136027321-adbfqhkd98ql3vbianaofrukm5gd29dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#007BFF</color> <!-- Fő szín (kék) -->
+    <color name="colorPrimaryDark">#0056b3</color> <!-- Sötét kék -->
+    <color name="colorAccent">#28A745</color> <!-- Zöld (egészség) -->
+
+    <!-- Háttér és szöveg színek -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- Fehér háttér -->
+    <color name="textColorPrimary">#343A40</color> <!-- Sötétszürke szöveg -->
+    <color name="textColorSecondary">#6C757D</color> <!-- Másodlagos szöveg (szürke) -->
+    <color name="hintTextColor">#9E9E9E</color> <!-- Hint szöveg szín (szürke) -->
+
+    <!-- Gomb színek -->
+    <color name="buttonBackgroundColor">#007BFF</color> <!-- Kék gomb háttér -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- Fehér gomb szöveg -->
+
+    <!-- További színek -->
+    <color name="cardBackgroundColor">#F8F9FA</color> <!-- Világos szürke háttér a kártyákhoz -->
+    <color name="successColor">#28A745</color> <!-- Zöld a sikeres üzenetekhez -->
+    <color name="errorColor">#DC3545</color> <!-- Piros az értesítésekhez -->
+    <color name="pharmaGreen">#2E7D32</color>
+</resources>

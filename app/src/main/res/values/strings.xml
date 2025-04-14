@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">betaprojekt</string>
+    <string name="name">Név</string>
+    <string name="password">Jelszó</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="register">Regisztráció</string>
+    <string name="fullname">Teljes név</string>
+    <string name="email">E-mail cím</string>
+    <string name="passwordagain">Jelszó megerősítése</string>
+    <string name="cancel">Vissza</string>
+    <string name="phoneNumber">Telefonszám</string>
+    <string name="address">Lakcím</string>
+    <string name="buyer">Vásárló</string>
+    <string name="seller">Eladó</string>
+    <string name="description">Termék leírás.</string>
+    <string name="loginwithGoogle">Bejelentkezés Google fiókkal</string>
+    <string name="loginAsGuest">Bejelentkezés vendégként</string>
+    <string name="cim">Online Gyógyszertár</string>
+    <string name="logo">Gyógyszertár logó</string>
+    <string-array name="phoneModes">
+        <item>Otthoni</item>
+        <item>Munkahelyi</item>
+        <item>Mobil</item>
+        <item>Egyéb</item>
+    </string-array>
+</resources>
