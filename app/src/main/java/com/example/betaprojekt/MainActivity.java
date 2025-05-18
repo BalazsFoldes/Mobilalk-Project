@@ -7,15 +7,19 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.loader.app.LoaderManager;
+import androidx.loader.content.Loader;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
@@ -31,7 +35,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
     private static final String LOG_TAG = MainActivity.class.getName();
     private static final String PREF_KEY = MainActivity.class.getPackage().toString();
     private static final int RC_SIGN_IN = 123;
@@ -77,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
         loginasguest.startAnimation(slideIn);
         registerButton.startAnimation(slideIn);
 
+
+        getSupportLoaderManager().restartLoader(0, null, this);
         Log.i(LOG_TAG, "onCreate");
     }
 
@@ -115,8 +121,6 @@ public class MainActivity extends AppCompatActivity {
     public void login(View view) {
         String userName = userNameET.getText().toString();
         String password = passwordET.getText().toString();
-
-        //Log.i(LOG_TAG, "Bejelentkezett: " + userName + ", jelszó: " + password);
 
         mAuth.signInWithEmailAndPassword(userName, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -202,4 +206,19 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         Log.i(LOG_TAG, "onRestart");
     }
+
+    @NonNull
+    @Override
+    public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
+        return new RandomAsyncLoader(this);
+    }
+
+    @Override
+    public void onLoadFinished(@NonNull Loader<String> loader, String data) {
+        Button button = findViewById(R.id.loginAsGuest);
+        button.setText(data);
+    }
+
+    @Override
+    public void onLoaderReset(@NonNull Loader<String> loader) {}
 }

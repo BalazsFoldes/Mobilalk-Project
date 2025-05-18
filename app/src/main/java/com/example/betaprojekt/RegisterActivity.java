@@ -1,12 +1,10 @@
 package com.example.betaprojekt;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -36,9 +34,9 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
     EditText passwordEditText;
     EditText passwordVerificationEditText;
     EditText phoneEditText;
-    Spinner spinner; //spinner nem feltétlen itt kell majd
-    EditText addressEditText; //nem feltétlen kell majd
-    RadioGroup accountTypeGroup; // nem feltétlen kell majd
+    Spinner spinner;
+    EditText addressEditText;
+    RadioGroup accountTypeGroup;
 
     private SharedPreferences preferences;
     private FirebaseAuth mAuth;
@@ -54,8 +52,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
             return insets;
         });
 
-        // Bundle bundle = getIntent().getExtras();
-        // bundle.getInt("SECRET_KEY");
         int secret_key = getIntent().getIntExtra("SECRET_KEY", 0);
 
         if(secret_key != 66){
@@ -67,10 +63,10 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         passwordEditText = findViewById(R.id.passwordEditText);
         passwordVerificationEditText = findViewById(R.id.passwordVerificationEditText);
         phoneEditText = findViewById(R.id.phoneEditText);
-        spinner = findViewById(R.id.phoneSpinner); //spinner nem feltétlen itt kell majd
-        addressEditText = findViewById(R.id.addressEditText); // nem feltétlen kell majd
-        accountTypeGroup = findViewById(R.id.accountTypeGroup); // nem feltétlen kell majd
-        accountTypeGroup.check(R.id.buyerRadioButton); // nem feltétlen kell majd
+        spinner = findViewById(R.id.phoneSpinner);
+        addressEditText = findViewById(R.id.addressEditText);
+        accountTypeGroup = findViewById(R.id.accountTypeGroup);
+        accountTypeGroup.check(R.id.buyerRadioButton);
 
         preferences = getSharedPreferences(PREF_KEY, MODE_PRIVATE);
         String username = preferences.getString("username", "");
@@ -80,7 +76,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         passwordEditText.setText(password);
         passwordVerificationEditText.setText(password);
 
-        //spinner nem feltétlen itt kell majd
         spinner.setOnItemSelectedListener(this);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.phoneModes, android.R.layout.simple_spinner_item);
@@ -104,8 +99,8 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
         }
 
         String phoneNumber = phoneEditText.getText().toString();
-        String phoneType = spinner.getSelectedItem().toString(); // nem feltétlen kell majd
-        String address = addressEditText.getText().toString(); // nem feltétlen kell majd
+        String phoneType = spinner.getSelectedItem().toString();
+        String address = addressEditText.getText().toString();
 
         int checkedId = accountTypeGroup.getCheckedRadioButtonId();
         RadioButton radioButton = accountTypeGroup.findViewById(checkedId);

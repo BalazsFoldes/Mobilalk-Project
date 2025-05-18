@@ -11,68 +11,21 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:background="#2E7D32"
-        app:title="Gyógyszerbolt"
+        android:background="@color/pharmaGreen"
+        android:elevation="4dp"
         app:titleTextColor="@android:color/white"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageView
-        android:id="@+id/elsokep"
-        android:layout_width="146dp"
-        android:layout_height="183dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="76dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gyogyszeregy" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ImageView
-        android:id="@+id/masodikkep"
-        android:layout_width="140dp"
-        android:layout_height="196dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/elsokep"
-        app:srcCompat="@drawable/gyogyszerketto" />
-
-    <ImageView
-        android:id="@+id/harmadikkep"
-        android:layout_width="140dp"
-        android:layout_height="248dp"
-        android:layout_marginLeft="108dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/masodikkep"
-        app:srcCompat="@drawable/gyogyszerharom" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/description"
-        app:layout_constraintRight_toRightOf="@id/elsokep"
-        app:layout_constraintTop_toTopOf="@id/elsokep" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="176dp"
-        android:layout_marginRight="32dp"
-        android:text="@string/description"
-        app:layout_constraintRight_toRightOf="@id/masodikkep"
-        app:layout_constraintTop_toTopOf="@id/masodikkep" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:layout_marginRight="24dp"
-        android:text="@string/description"
-        app:layout_constraintRight_toRightOf="@id/harmadikkep"
-        app:layout_constraintTop_toTopOf="@id/harmadikkep" />
 </androidx.constraintlayout.widget.ConstraintLayout>

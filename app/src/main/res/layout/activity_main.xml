@@ -22,7 +22,6 @@
         android:elevation="4dp"
         android:scaleType="centerInside" />
 
-    <!-- Cím -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -54,7 +53,6 @@
             android:inputType="textEmailAddress" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Jelszó -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputPassword"
         android:layout_width="0dp"
@@ -89,7 +87,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Google gomb -->
     <com.google.android.material.button.MaterialButton
         android:id="@+id/loginwithGoogle"
         android:layout_width="0dp"

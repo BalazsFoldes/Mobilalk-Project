@@ -23,4 +23,65 @@
         <item>Mobil</item>
         <item>Egyéb</item>
     </string-array>
+
+    <string name="title_placeholder">Név</string>
+    <string name="item_placeholder">Leírás</string>
+    <string name="item_info_placeholder">Infó a termékről</string>
+    <string name="elerheto">ONLINE ELÉRHETŐ</string>
+    <string name="emptycart">A kosár tartalma jelenleg üres.</string>
+
+    <string-array name="shopping_item_names">
+        <item>Centrum Kids gumivitamin</item>
+        <item>No-Spa Forte Neo</item>
+        <item>Nurofen Rapid Forte 400</item>
+        <item>Rubophen 500 mg</item>
+        <item>Aspirin Plus C</item>
+        <item>Béres Csepp Forte</item>
+        <item>LIVSANE C vitamin 1000 mg pezsgőtabletta</item>
+        <item>Santes hüvelykúp</item>
+    </string-array>
+
+    <string-array name="shopping_item_desc">
+        <item>A Centrum Kids VitaGummies erdei gyülölcs zselé egy kiváló minőségű multivitamin, amely vitaminok és ásványi anyagok kiegyensúlyozott kombinációját kínálja 3 éves kortól gyermekek számára.</item>
+        <item>Görcsoldó filmtabletta, 48 darabos</item>
+        <item>A Nurofen Rapid Forte 400 mg lágy kapszula felnőttek és 40 kg-os testtömeg felett (12 éves, és annál idősebb) serdülők esetében alkalmas enyhe és közepesen erős fájdalmak, pl. fejfájás, menstruációs fájdalmak, fogfájás rövidtávú tüneti kezelésére, a meghűléses betegségek esetén láz és fájdalom csillapítására.</item>
+        <item>A Rubophen 500 mg tabletta felnőtteknek és 6 évesnél idősebb gyermekeknek javasolt lázcsillapításra, különböző eredetű fájdalmak – fejfájás, fogfájás, reumatikus és izomfájdalmak, menstruációs fájdalmak, idegi eredetű fájdalom, ízületi fájdalmak – csillapítására.</item>
+        <item>Alkalmazható enyhe és középerős fájdalmak esetében, mint fejfájás, fogfájás, megfázás okozta torokfájdalom, hátfájás, ízületi és izomfájdalmak; továbbá lázcsillapításra, valamint a meghűlés és az influenza tüneteinek csillapítására.</item>
+        <item>Alkalmazása javasolt nyomelempótlásra: az immunrendszer működésének, a szervezet ellenálló képességének támogatására, pl. meghűléses megbetegedésekben, influenza idején</item>
+        <item>Étrend-kiegészítő C-vitaminnal és édesítőszerrel: Nem tartalmaz állati eredetű összetevőket és hozzáadott cukrot.</item>
+        <item>Hüvelyszárazság, hüvelyhámsérülések kezelésére, megelőzésére. Biohasznosulása kiemelkedő, hormonmentes.</item>
+    </string-array>
+
+    <array name="shopping_item_available">
+        <item>ONLINE ELÉRHETŐ</item>
+        <item>ONLINE ELÉRHETŐ</item>
+        <item>ONLINE ELÉRHETŐ</item>
+        <item>NEM ELÉRHETŐ</item>
+        <item>ONLINE ELÉRHETŐ</item>
+        <item>ONLINE ELÉRHETŐ</item>
+        <item>NEM ELÉRHETŐ</item>
+        <item>ONLINE ELÉRHETŐ</item>
+    </array>
+
+    <array name="shopping_item_images">
+        <item>@drawable/centrumkids</item>
+        <item>@drawable/nospa</item>
+        <item>@drawable/nurofen</item>
+        <item>@drawable/rubophen</item>
+        <item>@drawable/aspirin</item>
+        <item>@drawable/berescsepp</item>
+        <item>@drawable/livsane</item>
+        <item>@drawable/santes</item>
+    </array>
+
+    <array name="shopping_item_price">
+        <item>3.299 Ft</item>
+        <item>1.500 Ft</item>
+        <item>2.899 Ft</item>
+        <item>4.500 Ft</item>
+        <item>3.999 Ft</item>
+        <item>1.999 Ft</item>
+        <item>1.500 Ft</item>
+        <item>2.499 Ft</item>
+    </array>
 </resources>
